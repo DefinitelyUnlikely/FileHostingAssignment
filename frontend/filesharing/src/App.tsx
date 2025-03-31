@@ -1,5 +1,8 @@
 import { useState } from 'react'
-import { Hamburger } from './components/Header/Hamburger/Hamburger'
+import { Link, Outlet, Route, Routes } from "react-router";
+import { Homepage } from './pages/HomePage';
+import { Header } from './components/Header/Header'
+import { Footer } from './components/Footer/Footer';
 import './App.css'
 
 
@@ -7,7 +10,21 @@ function App() {
 
   return (
     <>
-      <Hamburger />
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Homepage />} />
+        </Route>
+      </Routes >
+    </>
+  )
+}
+
+function Layout() {
+  return (
+    <>
+      <Header />
+      <Outlet />
+      <Footer />
     </>
   )
 }

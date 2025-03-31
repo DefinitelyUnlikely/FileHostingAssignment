@@ -1,11 +1,15 @@
 import './Header.css'
+import { Hamburger } from './Hamburger/Hamburger'
 
 
 export function Header() {
 
     return (
-        <nav>
+        <header>
+            <nav>
+                <Hamburger />
+            </nav>
+        </header>
 
-        </nav>
     )
 }
