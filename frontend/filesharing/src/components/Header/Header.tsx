@@ -11,7 +11,7 @@ export function Header() {
 
                 </div>
                 <div className="middle-nav">
-                    <h4 className="branding brandname"> mDrive</h4>
+                    <h4 className="branding brandname"> mFile</h4>
                 </div>
                 <div className="right-nav">
                     <Hamburger />
