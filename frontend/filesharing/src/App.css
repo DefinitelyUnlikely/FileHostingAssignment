@@ -16,15 +16,13 @@ their respective component css file */
 
 header {
   flex-shrink: 0;
-  background-color: black;
+  background-color: #314769;
 }
 
 main {
   flex-grow: 1;
-}
-
-footer {
-  background-color: black;
-  flex-shrink: 0;
-  min-height: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
