@@ -1,0 +1,21 @@
+.navbar {
+    display: grid;
+    grid-template-columns: 2fr 6fr 2fr;
+}
+
+.left-nav {}
+
+.middle-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+@media screen {}

@@ -6,8 +6,16 @@ export function Header() {
 
     return (
         <header>
-            <nav>
-                <Hamburger />
+            <nav className="navbar">
+                <div className="left-nav">
+
+                </div>
+                <div className="middle-nav">
+                    <h4 className="branding brandname"> mDrive</h4>
+                </div>
+                <div className="right-nav">
+                    <Hamburger />
+                </div>
             </nav>
         </header>
 
