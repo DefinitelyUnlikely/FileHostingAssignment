@@ -1,9 +1,11 @@
 import './HomePage.css'
+import { FolderIcon } from '../components/FolderIcon/FolderIcon'
 
 export function Homepage() {
     return (
         <main className="home-page">
-            Hello
+            <FolderIcon />
         </main>
     )
 }
+
