@@ -7,8 +7,8 @@ export function FolderIcon({ folderName = "Hello World!" }) {
     return (
         <div className="folder-icon">
             <svg viewBox="0 0 24 24" height="5rem" width="5rem" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
                 <g id="SVGRepo_iconCarrier">
                     <path d="
             M3 8.2C3 7.07989 3 6.51984 3.21799 6.09202C3.40973 5.71569 3.71569
@@ -23,7 +23,7 @@ export function FolderIcon({ folderName = "Hello World!" }) {
             18.782C19.4802 19 18.9201 19 17.8 19H6.2C5.07989 19 4.51984 
             19 4.09202 18.782C3.71569 18.5903 3.40973 18.2843 3.21799 17.908C3 
             17.4802 3 16.9201 3 15.8V8.2Z"
-                        stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                        stroke="#000000" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
                     </path>
                 </g>
             </svg>
