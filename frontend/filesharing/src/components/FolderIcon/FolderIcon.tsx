@@ -1,7 +1,7 @@
 import './FolderIcon.css'
 
 
-export function FolderIcon() {
+export function FolderIcon({ folderName = "Hello World!" }) {
 
 
     return (
@@ -27,7 +27,7 @@ export function FolderIcon() {
                     </path>
                 </g>
             </svg>
-            <p className="folder-text">Hello</p>
+            <p className="folder-text">{folderName}</p>
         </div>
     )
 }
