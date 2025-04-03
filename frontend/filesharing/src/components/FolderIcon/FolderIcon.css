@@ -7,7 +7,7 @@
 
 .folder-icon:hover {
     background-color: hsla(0, 0%, 0%, 0.103);
-    border-radius: 1rem;
+    border-radius: 0.25rem;
 }
 
 .folder-text {
