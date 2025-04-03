@@ -3,8 +3,6 @@ import { FolderIcon } from '../components/FolderIcon/FolderIcon'
 
 export function Homepage() {
 
-
-
     return (
         <main className="home-page">
             <div className="folder-grid">
@@ -15,7 +13,6 @@ export function Homepage() {
                 <FolderIcon folderPath='Folder 5' />
                 <FolderIcon folderPath='Folder 6' />
             </div>
-
         </main>
     )
 }
