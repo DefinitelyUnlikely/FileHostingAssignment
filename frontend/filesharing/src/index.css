@@ -8,6 +8,8 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background: linear-gradient(#4175c4, #df7700);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -26,4 +28,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+
+.branding {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background: -webkit-linear-gradient(270deg, #4175c4, #df7700);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
