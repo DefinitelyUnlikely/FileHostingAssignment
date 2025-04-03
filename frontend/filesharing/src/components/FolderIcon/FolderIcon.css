@@ -13,3 +13,9 @@
 .folder-text {
     margin: 0;
 }
+
+.folder-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
