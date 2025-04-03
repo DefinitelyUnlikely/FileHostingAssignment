@@ -1,15 +1,20 @@
 import './FolderIcon.css'
 
 
-export function FolderIcon({ folderName = "Hello World!" }) {
+export function FolderIcon({ folderPath = "Hello/World" }) {
 
+    let folderName = folderPath.split("/")[folderPath.split("/").length - 1]
+
+    const folderOnClick = () => {
+        console.log("My folder name is " + folderName)
+    }
 
     return (
-        <div className="folder-icon">
+        <div className="folder-icon" onClick={folderOnClick}>
             <svg viewBox="0 0 24 24" height="5rem" width="5rem" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-                <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
-                <g id="SVGRepo_iconCarrier">
+                <g strokeWidth="0"></g>
+                <g strokeLinecap="round" strokeLinejoin="round"></g>
+                <g>
                     <path d="
             M3 8.2C3 7.07989 3 6.51984 3.21799 6.09202C3.40973 5.71569 3.71569
             5.40973 4.09202 5.21799C4.51984 5 5.0799 5 6.2 5H9.67452C10.1637 5
