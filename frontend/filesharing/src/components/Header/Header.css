@@ -17,6 +17,13 @@
     align-items: center;
 }
 
+.extra-bar {
+    display: none;
+}
+
+.extra-bar.visible {
+    display: block;
+}
 
 
 @media screen {}

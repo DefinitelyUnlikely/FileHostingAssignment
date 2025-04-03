@@ -1,8 +1,10 @@
 import './Header.css'
+import { useState } from 'react';
 import { Hamburger } from './Hamburger/Hamburger'
 
 
 export function Header() {
+    const [extraBarVisible, setExtraBarVisible] = useState(false);
 
     return (
         <header>
@@ -14,9 +16,12 @@ export function Header() {
                     <h1 className="branding brandname"> Sunrise Drive</h1>
                 </div>
                 <div className="right-nav">
-                    <Hamburger />
+                    <Hamburger extraBarVisible={extraBarVisible} setExtraBarVisible={setExtraBarVisible} />
                 </div>
             </nav>
+            <div className={`extra-bar ${extraBarVisible ? "visible" : ""}`}>
+                Hello
+            </div>
         </header>
 
     )

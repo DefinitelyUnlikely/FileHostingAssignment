@@ -1,11 +1,12 @@
 import './Hamburger.css'
 import { useState } from 'react';
 
-export function Hamburger() {
-    const [isActive, SetIsActive] = useState(false);
+export function Hamburger({ extraBarVisible, setExtraBarVisible }: { extraBarVisible: Boolean, setExtraBarVisible: React.Dispatch<React.SetStateAction<boolean>> }) {
+    const [isActive, setIsActive] = useState(false);
 
     const handleOnClick = () => {
-        SetIsActive(!isActive);
+        setIsActive(!isActive);
+        setExtraBarVisible(!extraBarVisible)
     }
 
     return (
